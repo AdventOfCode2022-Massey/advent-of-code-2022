@@ -8,7 +8,7 @@ version = "0.1.0"
 source = "git+http://github.com/BartMassey/libaoc.git#2344ab66772abf09fe0ffd060f7e563c8e565076"
 
 [[package]]
-name = "day1"
+name = "day01"
 version = "0.1.0"
 dependencies = [
  "aoc",
