@@ -7,9 +7,9 @@ solutions will stop where the fun stops, probably when it
 takes more than an hour for the two of us to solve a
 problem.
 
-Advent of Code is a fun exercise up to a point, and I thank
+Advent of Code is a fun exercise up to a point, and we thank
 the author and others involved for their work. Thanks also
-to `relsqui` for pointing me at this back in 2015.
+to `relsqui` for pointing us at this back in 2015.
 
 ## Previously
 
@@ -28,13 +28,26 @@ to `relsqui` for pointing me at this back in 2015.
 
 ## Organization
 
-The solutions are in directories named `day01` through
-`day19`. For each solution, I include cleaned-up Rust
-code. There is a `README.md` in every problem directory
-containing algorithm descriptions, comments and usage
-instructions. I used to included the problem descriptions
-and my specific `input.txt`, but apparently the authors of
-AoC don't want me to do that.
+The solutions are in directories named `day01`, `day02`,
+etc. Each day is its own Git submodule. When you first clone
+this repo, you will need to do
+
+    git submodule init
+
+and at the beginning and after each pull of a new day do
+
+    git submodule add
+
+The submodules are indexed using an `ssh` URL for our
+convenience; this probably means you will need to have
+Github SSH set up to be able to use these.
+
+For each solution, we include cleaned-up Rust code. There is
+a `README.md` in every problem directory containing
+algorithm descriptions, comments and usage instructions. (We
+used to included the problem descriptions and my specific
+`input.txt`, but apparently the authors of AoC don't want me
+to do that.)
 
 The solutions load library code from the included `libaoc`
 crate. See its documentation for details.
@@ -43,8 +56,8 @@ crate. See its documentation for details.
 
 There are no special system tests written for this code
 other than the ones provided as part of the problem ---
-there are occasional unit tests. I regard passing both parts
-of a day's problem as strong validation, although I've been
+there are occasional unit tests. We regard passing both parts
+of a day's problem as strong validation, although we've been
 wrong about this in the past. More tests should get written.
 
 These programs are not production-quality: it is considered
@@ -60,8 +73,8 @@ The goals of these solutions are to:
 
 * Illustrate the use of Rust in problem-solving.
 
-As always I expect to learn some Rust and a little bit of
-software engineering I should already have known writing
+As always we expect to learn some Rust and a little bit of
+software engineering we should already have known writing
 these.
 
 ## Infrastructure
@@ -69,7 +82,7 @@ these.
 There's some engineering infrastructure here in the form of
 the `template` directory and the `mkday.sh` and other shell
 scripts.  These speed each day's setup considerably. At the
-beginning of each day I `sh mkday.sh`. (The day number is
+beginning of each day we `sh mkday.sh`. (The day number is
 tracked automatically but can be overwritten on the command
 line.)
 
@@ -83,7 +96,7 @@ are huge.
 ## Misc
 
 These solutions deserve a much more thorough top-level
-description than I usually have the energy to
+description than we usually have the energy to
 write. Apologies.
 
 ---
