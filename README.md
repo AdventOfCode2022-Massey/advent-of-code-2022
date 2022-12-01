@@ -49,7 +49,7 @@ used to included the problem descriptions and my specific
 `input.txt`, but apparently the authors of AoC don't want me
 to do that.)
 
-The solutions load library code from the included `libaoc`
+Some solutions load library code from the `libaoc`
 crate. See its documentation for details.
 
 ## Code Quality

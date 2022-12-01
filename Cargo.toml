@@ -1,6 +1,8 @@
 [workspace]
-exclude = [ "libaoc" ]
 members = [
     "day01",
     #dayXX
 ]
+
+[workspace.dependencies.aoc]
+git = "http://github.com/BartMassey/libaoc.git"
