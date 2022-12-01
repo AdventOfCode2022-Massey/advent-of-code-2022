@@ -59,10 +59,11 @@ fi
 echo "$DAYSTR" >$DAYFILE
 
 case "$DAYSTR" in
-    [1-9]) DAY=day"0$DAYSTR" ;;
-    [1-3][0-9]) DAY=day"$DAYSTR" ;;
+    [1-9]) DAYZ="0$DAYSTR" ;;
+    [1-3][0-9]) DAYZ="$DAYSTR" ;;
     *) echo "mkday: bad day $DAYSTR" >&2; exit 1 ;;
 esac
+DAY=day$DAYZ
 
 mkdir $DAY
 if [ $? -ne 0 ]
@@ -71,14 +72,21 @@ then
     exit 1
 fi
 
-sed -i -e "/#dayXX/i\    \"day${DAYZ}${DAYSTR}\"," Cargo.toml
+sed -i -e "/#dayXX/i\    \"${DAY}\"," Cargo.toml
 
 cd template
 for f in *
 do
-    sed -e "s=<day>=$DAYSTR=g" -e "s=<year>=$YEAR=g" -e "s=<0day>=$DAYZ$DAYSTR=" <$f >../$DAY/$f
+    sed -e "s=<day>=${DAYSTR}=g" -e "s=<year>=${YEAR}=g" -e "s=<0day>=${DAYZ}=" <$f >../$DAY/$f
 done
 
 cd ../$DAY
 mv gitignore .gitignore
+git init
+git add *
+git commit -m "advent of code $YEAR day $DAYZ"
 echo $DAYSTR >.day
+mkgit -X github-AdventOfCode${YEAR}-Massey
+
+cd ..
+git submodule add ssh://git@github.com/AdventOfCode${YEAR}-Massey/${DAY}.git
