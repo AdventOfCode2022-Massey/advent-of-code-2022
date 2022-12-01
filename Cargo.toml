@@ -2,6 +2,5 @@
 exclude = [ "libaoc" ]
 members = [
     "day01",
-    "day1",
     #dayXX
 ]
