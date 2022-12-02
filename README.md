@@ -36,7 +36,7 @@ this repo, you will need to do
 
 and at the beginning and after each pull of a new day do
 
-    git submodule add
+    git submodule update
 
 The submodules are indexed using an `ssh` URL for our
 convenience; this probably means you will need to have
