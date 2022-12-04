@@ -83,7 +83,7 @@ done
 cd ../$DAY
 mv gitignore .gitignore
 git init
-git add *
+git add * .gitignore
 git commit -m "advent of code $YEAR day $DAYZ"
 echo $DAYSTR >.day
 mkgit -X github-AdventOfCode${YEAR}-Massey
