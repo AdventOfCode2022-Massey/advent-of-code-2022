@@ -5,10 +5,17 @@ version = 3
 [[package]]
 name = "aoc"
 version = "0.1.0"
-source = "git+http://github.com/BartMassey/libaoc.git#2344ab66772abf09fe0ffd060f7e563c8e565076"
+source = "git+http://github.com/BartMassey/libaoc.git#9b73f8d841eb0c5970bc7e2715044164cf681bdf"
 
 [[package]]
 name = "day01"
+version = "0.1.0"
+dependencies = [
+ "aoc",
+]
+
+[[package]]
+name = "day02"
 version = "0.1.0"
 dependencies = [
  "aoc",
