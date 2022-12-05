@@ -6,6 +6,3 @@ members = [
     "day04",
     #dayXX
 ]
-
-[workspace.dependencies.aoc]
-git = "http://github.com/BartMassey/libaoc.git"

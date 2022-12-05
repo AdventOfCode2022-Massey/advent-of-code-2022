@@ -13,13 +13,52 @@ dependencies = [
 
 [[package]]
 name = "aoc"
+version = "0.2.0"
+source = "git+https://github.com/BartMassey/libaoc#3d900004f384f8e02764bdc448a1b6a17fb77504"
+dependencies = [
+ "aoc-astar",
+ "aoc-comb",
+ "aoc-geom",
+ "aoc-hexstring",
+ "aoc-maprender",
+ "aoc-numberfns",
+ "aoc-reparse",
+]
+
+[[package]]
+name = "aoc-astar"
 version = "0.1.0"
-source = "git+https://github.com/BartMassey/libaoc#9b73f8d841eb0c5970bc7e2715044164cf681bdf"
+source = "git+https://github.com/BartMassey/libaoc#3d900004f384f8e02764bdc448a1b6a17fb77504"
+
+[[package]]
+name = "aoc-comb"
+version = "0.1.0"
+source = "git+https://github.com/BartMassey/libaoc#3d900004f384f8e02764bdc448a1b6a17fb77504"
+
+[[package]]
+name = "aoc-geom"
+version = "0.1.0"
+source = "git+https://github.com/BartMassey/libaoc#3d900004f384f8e02764bdc448a1b6a17fb77504"
+
+[[package]]
+name = "aoc-hexstring"
+version = "0.1.0"
+source = "git+https://github.com/BartMassey/libaoc#3d900004f384f8e02764bdc448a1b6a17fb77504"
+
+[[package]]
+name = "aoc-maprender"
+version = "0.1.0"
+source = "git+https://github.com/BartMassey/libaoc#3d900004f384f8e02764bdc448a1b6a17fb77504"
+
+[[package]]
+name = "aoc-numberfns"
+version = "0.1.0"
+source = "git+https://github.com/BartMassey/libaoc#3d900004f384f8e02764bdc448a1b6a17fb77504"
 
 [[package]]
 name = "aoc-reparse"
 version = "0.1.0"
-source = "git+https://github.com/BartMassey/libaoc#9b73f8d841eb0c5970bc7e2715044164cf681bdf"
+source = "git+https://github.com/BartMassey/libaoc#3d900004f384f8e02764bdc448a1b6a17fb77504"
 dependencies = [
  "regex",
 ]
@@ -51,7 +90,6 @@ name = "day04"
 version = "0.1.0"
 dependencies = [
  "aoc",
- "aoc-reparse",
 ]
 
 [[package]]
