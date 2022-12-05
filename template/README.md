@@ -1,5 +1,5 @@
 # Advent of Code <year>: Day <day>
-Bart Massey
+Ben and Bart Massey
 
 ---
 
