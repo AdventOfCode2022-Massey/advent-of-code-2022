@@ -3,7 +3,7 @@
 // for license terms.
 
 //! Advent of Code Day <day>.  
-//! Bart Massey <year>
+//! Ben and Bart Massey <year>
 
 use aoc::*;
 
