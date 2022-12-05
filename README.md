@@ -1,56 +1,34 @@
 # Advent Of Code 2022: Tutorial Solutions in Rust
 Copyright (c) 2022 Benjamin and Bart Massey
 
-Herein will lie Rust solutions to some of the problems of
+Herein lie Rust solutions to some of the problems of
 the 2022 [Advent of Code](http://adventofcode.com). The
 solutions will stop where the fun stops, probably when it
 takes more than an hour for the two of us to solve a
 problem.
 
-Advent of Code is a fun exercise up to a point, and we thank
-the author and others involved for their work. Thanks also
-to `relsqui` for pointing us at this back in 2015.
-
-## Previously
-
-* [2020](http://github.com/BartMassey/advent-of-code-2020)
-  in Rust (incomplete)
-* [2019](http://github.com/BartMassey/advent-of-code-2019)
-  in Rust (incomplete)
-* [2018](http://gitlab.com/BartMassey/advent-of-code-2018)
-  in Javascript (incomplete)
-* [2017](http://gitlab.com/BartMassey/advent-of-code-2017)
-  in Go
-* [2016](http://github.com/BartMassey/advent-of-code-2016)
-  in Rust
-* [2015](http://github.com/BartMassey/advent-of-code-2015)
-  in Haskell
+We are working mostly in pair-programming mode, with one of
+us taking the lead on each problem. Occasionally, we work a
+problem independently and compare solutions.
 
 ## Organization
 
 The solutions are in directories named `day01`, `day02`,
-etc. Each day is its own Git submodule. When you first clone
+etc. Each day is its own Git submodule. When you clone
 this repo, you will need to do
 
-    git submodule init
-
-and at the beginning and after each pull of a new day do
-
-    git submodule update
-
-The submodules are indexed using an `ssh` URL for our
-convenience; this probably means you will need to have
-Github SSH set up to be able to use these.
+    git submodule update --init
 
 For each solution, we include cleaned-up Rust code. There is
 a `README.md` in every problem directory containing
 algorithm descriptions, comments and usage instructions. (We
 used to included the problem descriptions and my specific
-`input.txt`, but apparently the authors of AoC don't want me
+`input.txt`, but apparently the authors of AoC don't want us
 to do that.)
 
-Some solutions load library code from the `libaoc`
-crate. See its documentation for details.
+Solutions load library code from the
+[`libaoc` crate](https://github.com/BartMassey/libaoc). See
+its documentation for details.
 
 ## Code Quality
 
@@ -60,8 +38,8 @@ there are occasional unit tests. We regard passing both parts
 of a day's problem as strong validation, although we've been
 wrong about this in the past. More tests should get written.
 
-These programs are not production-quality: it is considered
-acceptable to panic on erroneous input.
+These programs are not production-quality: it is often
+considered acceptable to panic on erroneous input.
 
 ## Goals
 
@@ -99,8 +77,30 @@ These solutions deserve a much more thorough top-level
 description than we usually have the energy to
 write. Apologies.
 
----
+## Previously
+
+* [2020](http://github.com/BartMassey/advent-of-code-2020)
+  in Rust (incomplete)
+* [2019](http://github.com/BartMassey/advent-of-code-2019)
+  in Rust (incomplete)
+* [2018](http://gitlab.com/BartMassey/advent-of-code-2018)
+  in Javascript (incomplete)
+* [2017](http://gitlab.com/BartMassey/advent-of-code-2017)
+  in Go
+* [2016](http://github.com/BartMassey/advent-of-code-2016)
+  in Rust
+* [2015](http://github.com/BartMassey/advent-of-code-2015)
+  in Haskell
+
+## License
 
 This work is licensed under the "MIT License".  Please see
 the file `LICENSE` in the source distribution of this
 software for license terms.
+
+## Acknowledgments
+
+Advent of Code is a fun exercise up to a point, and we thank
+the author and others involved for their work. Thanks also
+to `relsqui` for pointing us at this back in 2015.
+
