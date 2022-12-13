@@ -1,10 +1,10 @@
 # Advent Of Code 2022: Tutorial Solutions in Rust
 Copyright (c) 2022 Benjamin and Bart Massey
 
-Herein lie Rust solutions to days one through six of the
+Herein lie Rust solutions to days one through seven of the
 2022 [Advent of Code](http://adventofcode.com). The
-solutions stopped when the fun stopped, namely when I got
-stuck on a hard-to-find bug.
+solutions stopped when the fun stopped, namely when Bart got
+stuck on a hard-to-find bug which took forever to fix.
 
 We were working mostly in pair-programming mode, with one of
 us taking the lead on each problem. Occasionally, we worked
